@@ -1,0 +1,35 @@
+{
+  "name": "Beatport Scrobbler",
+  "description": "Chrome Extension that submits to Last.fm (scrobbles) music you play on New Beatport",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "https://www.beatport.com/"
+  ],
+  "content_scripts": [ {
+    "matches": [ "https://www.beatport.com/*" ],
+    "css": [ "style/style.css" ],
+    "js": [
+      "library/jquery.min.js",
+      "library/mustache.js",
+      "library/md5.js",
+      "script/system.js",
+      "script/index.js"
+    ]
+  } ],
+  "web_accessible_resources": [
+    "image/*.png",
+    "style/*.css",
+    "library/*.js",
+    "script/*.js",
+    "template/*.html"
+  ],
+  "icons": {
+    "16": "icon/16.png",
+    "48": "icon/48.png",
+    "128": "icon/128.png"
+  },
+  "minimum_chrome_version": "20",
+  "manifest_version": 2
+}

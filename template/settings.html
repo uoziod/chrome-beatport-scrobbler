@@ -1,0 +1,18 @@
+<a href="#" class="scrobbler-close"></a>
+
+<div class="scrobbler-popup">
+	<p>
+		Scrobble after
+		<input value="{{timeout}}" class="scrobbler-input scrobbler-center scrobbler-settings-timeout" maxlength="3" />
+		seconds
+	</p>
+	<p>
+		Bound track loving with Last.fm?
+		{{#boundLikes}}
+			<input type="checkbox" checked="checked" class="scrobbler-settings-bound-likes" />
+		{{/boundLikes}}
+		{{^boundLikes}}
+			<input type="checkbox" class="scrobbler-settings-bound-likes" />
+		{{/boundLikes}}
+	</p>
+</div>
