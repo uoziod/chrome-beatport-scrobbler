@@ -12,7 +12,7 @@
 	background: url('chrome-extension://__MSG_@@extension_id__/image/logo.png') no-repeat center;
 	background-size: 38px auto;
 	cursor: pointer;
-	opacity: .3;
+	opacity: .5;
 	-webkit-transition: opacity .1s ease-in-out;
 	-moz-transition: opacity .1s ease-in-out;
 	transition: opacity .1s ease-in-out;
@@ -31,12 +31,15 @@
 	left: 19px;
 	width: 65px;
 	height: 4px;
-	background: #999;
+	background: #e6e6e6;
 }
 
 .scrobbler-timeout-finished {
 	height: 4px;
+	width: 0;
 	background: #93bc3d;
+	border-right: 2px solid #759531;
+	box-sizing: border-box;
 }
 
 .scrobbler-noWrap {

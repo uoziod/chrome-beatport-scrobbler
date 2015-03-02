@@ -1,5 +1,5 @@
 Chrome Beatport Scrobbler
-===========================
+=========================
 
 [Chrome Extension](https://chrome.google.com/webstore/detail/beatport-scrobbler/mbededkmpingbgchhaghnlcbpgcejaao) that submits to Last.fm music from Beatport. Your participation is very appreciated!
 

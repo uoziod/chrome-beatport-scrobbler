@@ -7,7 +7,7 @@ scrobbler.renderTemplate(
 	function (rendered) {
 		var promise = setInterval(function() {
 			if ($('.primary-header--nav').length) {
-				$('.primary-header--nav').append(rendered);
+				$('.primary-header--nav .icon-search').after(rendered);
 				clearInterval(promise);
 			}
 		}, 10);
@@ -74,7 +74,7 @@ scrobbler.tick = function() {
 				percentage = scrobbler.playingTime / scrobbler.scrobbleTime;
 			if (percentage < 1 && localStorage['scrobbler-state'] !== 'paused') {
 				$timeoutBar.stop().fadeIn(500);
-				$('.scrobbler-timeout-finished').stop().animate({width: $timeoutBar.width() * percentage}, 1000, 'linear');
+				$('.scrobbler-timeout-finished').stop().css({width: $timeoutBar.width() * percentage});
 			} else {
 				$timeoutBar.stop().fadeOut(500);
 			}
